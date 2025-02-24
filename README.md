@@ -30,7 +30,10 @@ protein_samples.to_csv('/net/beegfs/scratch/mafechkar/protein_samples.csv', inde
 
 print("Successfully split metadata into gex_samples.csv and protein_samples.csv")
 
+
 export PATH=~/miniconda3/bin:$PATH
+source ~/miniconda3/etc/profile.d/conda.sh
+
 
 python3 /net/beegfs/scratch/mafechkar/split_metadata.py
 ls -lh /net/beegfs/scratch/mafechkar/gex_samples.csv
