@@ -4,82 +4,17 @@ bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
 rm ~/miniconda3/miniconda.sh
 
 
+rm -rf ~/miniconda3
+mkdir -p ~/miniconda3
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
+bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
+export PATH=~/miniconda3/bin:$PATH
+echo 'export PATH=~/miniconda3/bin:$PATH' >> ~/.bashrc
+source ~/.bashrc
+conda --version
 
-Traceback (most recent call last):
-  File "entry_point.py", line 244, in _constructor_extract_conda_pkgs
-  File "concurrent/futures/_base.py", line 449, in result
-  File "concurrent/futures/_base.py", line 401, in __get_result
-concurrent.futures.process.BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
 
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "entry_point.py", line 691, in <module>
-  File "entry_point.py", line 681, in main
-  File "entry_point.py", line 582, in _constructor_subcommand
-  File "entry_point.py", line 246, in _constructor_extract_conda_pkgs
-RuntimeError: Failed to extract /trinity/home/mafechkar/miniconda3/pkgs/pip-25.0-py312h06a4308_0.conda: A process in the process pool was terminated abruptly while the future was running or pending.
-[1845655] Failed to execute script 'entry_point' due to unhandled exception!
-[mafechkar@ares MDS_Data]$ mkdir -p ~/miniconda3
-[mafechkar@ares MDS_Data]$ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
---2025-02-25 10:49:22--  https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
-Resolving repo.anaconda.com (repo.anaconda.com)... 104.16.32.241, 104.16.191.158, 2606:4700::6810:bf9e, ...
-Connecting to repo.anaconda.com (repo.anaconda.com)|104.16.32.241|:443... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 154615621 (147M) [application/octet-stream]
-Saving to: '/trinity/home/mafechkar/miniconda3/miniconda.sh'
-
-/trinity/home/mafechkar/miniconda3/m 100%[====================================================================>] 147.45M  70.3MB/s    in 2.1s
-
-2025-02-25 10:49:24 (70.3 MB/s) - '/trinity/home/mafechkar/miniconda3/miniconda.sh' saved [154615621/154615621]
-
-[mafechkar@ares MDS_Data]$ bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
-PREFIX=/trinity/home/mafechkar/miniconda3
-Unpacking payload ...
-concurrent.futures.process._RemoteTraceback:
-'''
-Traceback (most recent call last):
-  File "concurrent/futures/process.py", line 424, in wait_result_broken_or_wakeup
-  File "multiprocessing/connection.py", line 251, in recv
-TypeError: InvalidArchiveError.__init__() missing 1 required positional argument: 'msg'
-'''
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "entry_point.py", line 244, in _constructor_extract_conda_pkgs
-  File "concurrent/futures/_base.py", line 449, in result
-  File "concurrent/futures/_base.py", line 401, in __get_result
-concurrent.futures.process.BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "entry_point.py", line 691, in <module>
-  File "entry_point.py", line 681, in main
-  File "entry_point.py", line 582, in _constructor_subcommand
-  File "entry_point.py", line 246, in _constructor_extract_conda_pkgs
-RuntimeError: Failed to extract /trinity/home/mafechkar/miniconda3/pkgs/pip-25.0-py312h06a4308_0.conda: A process in the process pool was terminated abruptly while the future was running or pending.
-[1851581] Failed to execute script 'entry_point' due to unhandled exception!
-[mafechkar@ares MDS_Data]$ rm ~/miniconda3/miniconda.sh
-[mafechkar@ares MDS_Data]$ module load python
-[mafechkar@ares MDS_Data]$ conda install pandas
--bash: conda: command not found
-[mafechkar@ares MDS_Data]$ python3 -c "import pandas; print(pandas.__version__)"
-Traceback (most recent call last):
-  File "<string>", line 1, in <module>
-ModuleNotFoundError: No module named 'pandas'
-[mafechkar@ares MDS_Data]$ conda activate myenv
--bash: conda: command not found
-[mafechkar@ares MDS_Data]$ python3 -m pip list
-Package               Version
---------------------- -------
-easybuild             4.7.1
-easybuild-easyblocks  4.7.1
-easybuild-easyconfigs 4.7.1
-easybuild-framework   4.7.1
-pip                   22.0.4
-setuptools            58.1.0
-WARNING: You are using pip version 22.0.4; however, version 25.0.1 is available.
-You should consider upgrading via the '/trinity/shared/apps/python/3.9.16/bin/python3 -m pip install --upgrade pip' command.
-[mafechkar@ares MDS_Data]$
+#Install pandas
+conda install pandas
+python3 -m pip install --user pandas
+python3 -c "import pandas as pd; print(pd.__version__)"
