@@ -5,13 +5,13 @@ import pandas as pd
 # Path to antibodies Excel file 
 antibody_file = "/net/beegfs/scratch/mafechkar/MDS_Data/metadata/Kopie van TotalSeq_C_Human_Universal_Cocktail_v1_137_Antibodies_399905_Barcodes.xlsx"
 
-# Read the Excel file (adjust sheet_name if necessary)
+# Read the Excel file 
 df = pd.read_excel(antibody_file, engine='openpyxl')
 
 # Create the feature reference DataFrame
 feature_df = pd.DataFrame({
     "id": df["Barcode"],
-    "name": df["Gene Name"],
+    "name": df["Gene name"],
     "read": "AntibodyCapture",         
     "feature_type": "Antibody Capture"   
 })
@@ -28,4 +28,4 @@ python3 make_feature_ref.py
 Kopie van TotalSeq_C_Human_Universal_Cocktail_v1_137_Antibodies_399905_Barcodes
 
 
-anti-human CD86	IT2.2	GTCTTTGTCAGTGCA	ENSG00000114013	CD86
+
