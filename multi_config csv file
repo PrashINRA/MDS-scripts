@@ -31,3 +31,8 @@ sample_sheet,/net/beegfs/scratch/mafechkar/MDS_Data/metadata/protein_samples.csv
 #Ensure that your FASTQ directories for gene expression and protein data exist:
 /net/beegfs/scratch/mafechkar/MDS_Data/MDS_GEX/ and
 /net/beegfs/scratch/mafechkar/MDS_Data/MDS_PROT/.
+
+
+find / -type d -name "refdata-cellranger-GRCh38-2020-A" 2>/dev/null
+find /net/beegfs/scratch/mafechkar/MDS_Data/References -type d -name "refdata-cellranger-GRCh38-2020-A"
+find ~ -type d -name "refdata-cellranger-GRCh38-2020-A"
