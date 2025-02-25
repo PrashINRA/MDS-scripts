@@ -1,0 +1,25 @@
+nano make_feature_ref.py
+#!/usr/bin/env python3
+import pandas as pd
+
+# Path to your antibodies Excel file (adjust path as needed)
+antibody_file = "/net/beegfs/scratch/mafechkar/MDA_Data/metadata/Antibodies.xlsx"
+
+# Read the Excel file (adjust sheet_name if necessary)
+df = pd.read_excel(antibody_file, engine='openpyxl')
+
+# Create the feature reference DataFrame
+feature_df = pd.DataFrame({
+    "id": df["Barcode"],
+    "name": df["Gene Name"],
+    "read": "AntibodyCapture",         # constant for all rows
+    "feature_type": "Antibody Capture"   # constant for all rows
+})
+
+# Save the DataFrame as a CSV file
+output_csv = "/net/beegfs/scratch/mafechkar/MDA_Data/metadata/feature_ref.csv"
+feature_df.to_csv(output_csv, index=False)
+
+print(f"Feature reference CSV file has been created at {output_csv}")
+
+python3 make_feature_ref.py
