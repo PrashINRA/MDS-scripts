@@ -1,6 +1,4 @@
 nano /net/beegfs/scratch/mafechkar/MDA_Data/metadata/multi_config.csv
-
-
 [gene-expression]
 reference,/net/beegfs/scratch/mafechkar/MDA_Data/References/refdata-cellranger-GRCh38-2020-A
 
@@ -18,3 +16,4 @@ sample_id,Combined_Sample
 fastq_id,Protein_library
 fastq,/net/beegfs/scratch/mafechkar/MDA_Data/MDS_PROT/
 sample_sheet,/net/beegfs/scratch/mafechkar/MDA_Data/metadata/protein_samples.csv
+
