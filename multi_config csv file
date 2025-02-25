@@ -20,14 +20,14 @@ sample_sheet,/net/beegfs/scratch/mafechkar/MDS_Data/metadata/protein_samples.csv
 #Double-Check Your Files and Paths:
 
 #Verify that your reference directory exists at:
-/net/beegfs/scratch/mafechkar/MDA_Data/References/refdata-cellranger-GRCh38-2020-A
+/net/beegfs/scratch/mafechkar/MDS_Data/References/refdata-cellranger-GRCh38-2020-A
 
 #Confirm that your feature reference file is at:
-/net/beegfs/scratch/mafechkar/MDA_Data/metadata/feature_ref.csv
+/net/beegfs/scratch/mafechkar/MDS_Data/metadata/feature_ref.csv
 
 #Check that your sample sheets (gex_samples.csv and protein_samples.csv) are in:
-/net/beegfs/scratch/mafechkar/MDA_Data/metadata/
+/net/beegfs/scratch/mafechkar/MDS_Data/metadata/
 
 #Ensure that your FASTQ directories for gene expression and protein data exist:
-/net/beegfs/scratch/mafechkar/MDA_Data/MDS_GEX/ and
-/net/beegfs/scratch/mafechkar/MDA_Data/MDS_PROT/.
+/net/beegfs/scratch/mafechkar/MDS_Data/MDS_GEX/ and
+/net/beegfs/scratch/mafechkar/MDS_Data/MDS_PROT/.
