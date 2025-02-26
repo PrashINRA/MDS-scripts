@@ -32,6 +32,16 @@ sample_sheet,/net/beegfs/scratch/mafechkar/MDS_Data/metadata/protein_samples.csv
 /net/beegfs/scratch/mafechkar/MDS_Data/MDS_GEX/ and
 /net/beegfs/scratch/mafechkar/MDS_Data/MDS_PROT/.
 
+PARTITION   AVAIL  TIMELIMIT  NODES  STATE NODELIST
+defq*          up   infinite      7    mix node[001,003-004,006,008-010]
+defq*          up   infinite      1  alloc node007
+defq*          up   infinite      2   idle node[002,005]
+interactive    up   infinite      2    mix node[011-012]
+gpu            up   infinite      1    mix gpu01
+gpu            up   infinite      1   idle hpc-anw01
+dragen         up   infinite      1   idle dragen01
+pbc            up   infinite      1   idle pbc01
+
 
 find / -type d -name "refdata-cellranger-GRCh38-2020-A" 2>/dev/null
 find /net/beegfs/scratch/mafechkar/MDS_Data/References -type d -name "refdata-cellranger-GRCh38-2020-A"
