@@ -31,25 +31,8 @@ sample_sheet,/net/beegfs/scratch/mafechkar/MDS_Data/metadata/protein_samples.csv
 #Ensure that your FASTQ directories for gene expression and protein data exist:
 /net/beegfs/scratch/mafechkar/MDS_Data/MDS_GEX/ and
 /net/beegfs/scratch/mafechkar/MDS_Data/MDS_PROT/.
-]$ scontrol show node "node001"
-NodeName=node001 Arch=x86_64 CoresPerSocket=32
-   CPUAlloc=12 CPUEfctv=128 CPUTot=128 CPULoad=11.46
-   AvailableFeatures=(null)
-   ActiveFeatures=(null)
-   Gres=(null)
-   NodeAddr=node001 NodeHostName=node001 Version=22.05.2
-   OS=Linux 4.18.0-477.15.1.el8_8.x86_64 #1 SMP Fri Jun 2 08:27:19 EDT 2023
-   RealMemory=515000 AllocMem=24576 FreeMem=135077 Sockets=2 Boards=1
-   State=MIXED ThreadsPerCore=2 TmpDisk=0 Weight=1 Owner=N/A MCS_label=N/A
-   Partitions=defq
-   BootTime=2025-02-12T12:18:40 SlurmdStartTime=2025-02-12T12:27:25
-   LastBusyTime=2025-02-21T22:21:26
-   CfgTRES=cpu=128,mem=515000M,billing=128
-   AllocTRES=cpu=12,mem=24G
-   CapWatts=n/a
-   CurrentWatts=0 AveWatts=0
-   ExtSensorsJoules=n/s ExtSensorsWatts=0 ExtSensorsTemp=n/s
 
+Hi, I'm working on setting up our Cell Ranger multi run for the MDS data and noticed that I don't have access to the genome reference folder at /net/beegfs/pub/ref/. Could you please let me know if there's a reference package for GRCh38 that I should use, and if so, could you grant me access or provide the correct path?
 
 
 find / -type d -name "refdata-cellranger-GRCh38-2020-A" 2>/dev/null
