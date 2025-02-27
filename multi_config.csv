@@ -1,6 +1,6 @@
 nano /net/beegfs/scratch/mafechkar/MDS_Data/metadata/multi_config.csv
 [gene-expression]
-reference,/net/beegfs/pub/ref/EnsEMBL/release-103/gtf/homo-sapiens/Homo.sapiens.GRCh38.103.gtf.gz
+reference= "/net/beegfs/pub/ref/EnsEMBL/release-103/gtf/homo-sapiens/Homo.sapiens.GRCh38.103.gtf.gz"
 
 [feature]
 feature-ref,/net/beegfs/scratch/mafechkar/MDS_Data/metadata/feature_ref.csv
