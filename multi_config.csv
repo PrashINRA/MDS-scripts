@@ -1,0 +1,24 @@
+nano /net/beegfs/scratch/mafechkar/MDS_Data/metadata/multi_config.csv
+[gene-expression]
+reference,/net/beegfs/pub/ref/EnsEMBL/release-103/gtf/homo-sapiens/Homo.sapiens.GRCh38.103.gtf.gz
+
+[feature]
+feature-ref,/net/beegfs/scratch/mafechkar/MDS_Data/metadata/feature_ref.csv
+
+[samples]
+sample_id,Combined_Sample
+fastq_id,GEX_library
+fastq,/net/beegfs/scratch/mafechkar/MDS_Data/MDS_GEX/
+sample_sheet,/net/beegfs/scratch/mafechkar/MDS_Data/metadata/gex_samples.csv
+
+[samples]
+sample_id,Combined_Sample
+fastq_id,Protein_library
+fastq,/net/beegfs/scratch/mafechkar/MDS_Data/MDS_PROT/
+sample_sheet,/net/beegfs/scratch/mafechkar/MDS_Data/metadata/protein_samples.csv
+
+
+
+
+
+
