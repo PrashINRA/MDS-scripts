@@ -29,3 +29,5 @@ cellranger multi --id=MDS_Output --csv="$CONFIG_FILE" --localcores=16 --localmem
 # Print a finish message
 echo "Cell Ranger Multi finished at $(date). Output is in: $OUTPUT_DIR"
 
+          11363100      defq cellrang mafechka PD       0:00      1 (QOSMaxWallDurationPerJobLimit)
+
