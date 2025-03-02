@@ -41,7 +41,25 @@ sample2,Protein,/net/beegfs/scratch/mafechkar/MDS_Data/metadata/protein_samples.
 sample18,GEX,/net/beegfs/scratch/mafechkar/MDS_Data/metadata/gex_samples.csv
 sample18,Protein,/net/beegfs/scratch/mafechkar/MDS_Data/metadata/protein_samples.csv
 
-
+///
+*,MDS201,SI-TN-A1
+*,MDS212,SI-TN-A2
+*,MDS155,SS-TN-B8
+*,MDS189,SS-TN-B10
+*,MDS059,SI-TN-B7
+*,MDS167,SI-TN-B11
+*,MDS169,SI-TN-A8
+*,MDS180,SI-TN-B9
+*,MDS005,SI-TN-C1
+*,MDS006,SI-TN-C2
+*,MDS029,SI-TN-B12
+*,MDS065,SI-TN-B2
+*,MDS010,SI-TN-B5
+*,MDS023,SI-TN-B3
+*,MDS038,SI-TN-B4
+*,MDS154,SI-TN-C3
+*,MDS001,SI-TN-C4
+*,MDS016,SI-TN-C5
 
 
 
