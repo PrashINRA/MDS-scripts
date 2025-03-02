@@ -29,7 +29,42 @@ cellranger multi --id=MDS_Output --csv="$CONFIG_FILE" --localcores=16 --localmem
 # Print a finish message
 echo "Cell Ranger Multi finished at $(date). Output is in: $OUTPUT_DIR"
 
-          11363100      defq cellrang mafechka PD       0:00      1 (QOSMaxWallDurationPerJobLimit)
--rw-rw-r--.  1 mafechkar mafechkar    0 Feb 28 12:24 cellranger_multi_counts.err
--rw-rw-r--.  1 mafechkar mafechkar 1.6K Feb 28 12:24 cellranger_multi_counts.out
-drwxrwxr-x. 20 mafechkar mafechkar   26 Feb 25 11:15 miniconda3
+       cat cellranger_multi_counts.out
+Starting Cell Ranger Multi at Fri Feb 28 12:24:27 CET 2025...
+
+
+Thank you for using cellranger. To help us improve our product,
+anonymized telemetry data has been collected and sent to 10X Genomics.
+This data helps us understand usage patterns, diagnose issues,
+and prioritize improvements.
+
+You can inspect the telemetry metrics sent by looking in
+/trinity/home/mafechkar/.cache/tenx/telemetry/cellranger/cellranger-9.0.0
+
+For more details on what data is collected and how it's used, please visit
+https://10xgen.com/pipeline-telemetry
+
+You can disable telemetry at any time by running the following command:
+        cellranger telemetry disable
+Martian Runtime - v4.0.13
+2025-02-28 12:24:27 [jobmngr] WARNING: User-supplied amount 300 GB is higher than the detected cgroup memory limit of 40.0 GB
+Serving UI at http://node010.cluster:45149?auth=VT73bLDSZJWieK49KKgZ4ycehgpWZLOMSSEHQ85E-N0
+
+Running preflight checks (please wait)...
+
+[error] Pipestance failed. Error log at:
+MDS_Output/SC_MULTI_CS/MULTI_PREFLIGHT/fork0/chnk0-u5de6c19ceb/_errors
+
+Log message:
+failed to parse CSV at line: 1, col: 1
+
+Waiting 6 seconds for UI to do final refresh.
+Pipestance failed. Use --noexit option to keep UI running after failure.
+
+2025-02-28 12:24:34 Shutting down.
+Saving pipestance info to "MDS_Output/MDS_Output.mri.tgz"
+For assistance, upload this file to 10x Genomics by running:
+
+cellranger upload <your_email> "MDS_Output/MDS_Output.mri.tgz"
+
+Cell Ranger Multi finished at Fri Feb 28 12:24:42 CET 2025. Output is in: /net/beegfs/scratch/mafechkar/MDS_Data/MDS_Output
