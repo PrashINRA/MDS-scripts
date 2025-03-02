@@ -2,7 +2,7 @@
 #SBATCH --job-name=cellranger_multi_counts
 #SBATCH --output=cellranger_multi_counts.out   
 #SBATCH --error=cellranger_multi_counts.err    
-#SBATCH --time=170:00:00
+#SBATCH --time=165:00:00
 #SBATCH --cpus-per-task=16
 #SBATCH --mem=500G
 #SBATCH --partition=defq
@@ -30,4 +30,6 @@ cellranger multi --id=MDS_Output --csv="$CONFIG_FILE" --localcores=16 --localmem
 echo "Cell Ranger Multi finished at $(date). Output is in: $OUTPUT_DIR"
 
           11363100      defq cellrang mafechka PD       0:00      1 (QOSMaxWallDurationPerJobLimit)
-
+-rw-rw-r--.  1 mafechkar mafechkar    0 Feb 28 12:24 cellranger_multi_counts.err
+-rw-rw-r--.  1 mafechkar mafechkar 1.6K Feb 28 12:24 cellranger_multi_counts.out
+drwxrwxr-x. 20 mafechkar mafechkar   26 Feb 25 11:15 miniconda3
