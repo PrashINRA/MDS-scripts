@@ -21,10 +21,8 @@ sample_sheet,/net/beegfs/scratch/mafechkar/MDS_Data/metadata/protein_samples.csv
 
 [gene-expression]
 reference,/net/beegfs/scratch/mafechkar/MDS_Data/References/refdata-gex-GRCh38-2020-A/
+probe-set,/net/beegfs/scratch/mafechkar/MDS_Data/metadata/feature_ref.csv
 create-bam,false
-
-[feature]
-feature-ref,/net/beegfs/scratch/mafechkar/MDS_Data/metadata/feature_ref.csv
 
 [libraries]
 fastq_id,fastqs,feature_types
