@@ -1,6 +1,6 @@
-nano /net/beegfs/scratch/mafechkar/MDS_Data/metadata/multi_config.csv
 [gene-expression]
-reference= "/net/beegfs/scratch/mafechkar/MDS_Data/References/refdata-gex-GRCh38-2020-A/"
+reference,/net/beegfs/scratch/mafechkar/MDS_Data/References/refdata-gex-GRCh38-2020-A/
+create-bam,false
 
 [feature]
 feature-ref,/net/beegfs/scratch/mafechkar/MDS_Data/metadata/feature_ref.csv
@@ -17,6 +17,29 @@ fastq_id,Protein_library
 fastq,/net/beegfs/scratch/mafechkar/MDS_Data/MDS_PROT/
 sample_sheet,/net/beegfs/scratch/mafechkar/MDS_Data/metadata/protein_samples.csv
 
+///
+
+[gene-expression]
+reference,/net/beegfs/scratch/mafechkar/MDS_Data/References/refdata-gex-GRCh38-2020-A/
+create-bam,false
+
+[feature]
+feature-ref,/net/beegfs/scratch/mafechkar/MDS_Data/metadata/feature_ref.csv
+
+[libraries]
+fastq_id,fastqs,feature_types
+GEX,/net/beegfs/scratch/mafechkar/MDS_Data/MDS_GEX/,Gene Expression
+Protein,/net/beegfs/scratch/mafechkar/MDS_Data/MDS_PROT/,Antibody Capture
+
+[samples]
+sample_id,fastq_id,sample_sheet
+sample1,GEX,/net/beegfs/scratch/mafechkar/MDS_Data/metadata/gex_samples.csv
+sample1,Protein,/net/beegfs/scratch/mafechkar/MDS_Data/metadata/protein_samples.csv
+sample2,GEX,/net/beegfs/scratch/mafechkar/MDS_Data/metadata/gex_samples.csv
+sample2,Protein,/net/beegfs/scratch/mafechkar/MDS_Data/metadata/protein_samples.csv
+...
+sample18,GEX,/net/beegfs/scratch/mafechkar/MDS_Data/metadata/gex_samples.csv
+sample18,Protein,/net/beegfs/scratch/mafechkar/MDS_Data/metadata/protein_samples.csv
 
 
 
