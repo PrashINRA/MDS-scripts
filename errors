@@ -1,3 +1,33 @@
+Starting Cell Ranger Multi at Mon Mar  3 13:55:08 CET 2025...
+
+
+Martian Runtime - v4.0.13
+2025-03-03 13:55:08 [jobmngr] WARNING: User-supplied amount 300 GB is higher than the detected cgroup memory limit of 40.0 GB
+Serving UI at http://node010.cluster:38987?auth=PTkOlIO9sN5YT9us0RnB-J8M2TiORgf81ZvP1QFTyAE
+
+Running preflight checks (please wait)...
+
+[error] Pipestance failed. Error log at:
+MDS_Output/SC_MULTI_CS/MULTI_PREFLIGHT/fork0/chnk0-ueb32c5a6ac/_errors
+
+Log message:
+The probe set CSV file is either missing or not readable from node010.cluster: /net/beegfs/scratch/mafechkar/MDS_Data/metadata/feature_ref.csv
+
+Waiting 6 seconds for UI to do final refresh.
+Pipestance failed. Use --noexit option to keep UI running after failure.
+
+2025-03-03 13:55:35 Shutting down.
+Saving pipestance info to "MDS_Output/MDS_Output.mri.tgz"
+For assistance, upload this file to 10x Genomics by running:
+
+cellranger upload <your_email> "MDS_Output/MDS_Output.mri.tgz"
+
+Cell Ranger Multi finished at Mon Mar  3 13:55:35 CET 2025. Output is in: /net/beegfs/scratch/mafechkar/MDS_Data/MDS_Output
+[mafechkar@ares mafechkar]$
+
+
+///
+
 2025-03-03 13:29:08 [jobmngr] WARNING: User-supplied amount 300 GB is higher than the detected cgroup memory limit of 40.0 GB
 Serving UI at http://node009.cluster:35027?auth=ou698_ZuBb3nrxZzZNvQBAwDRm-6ch_taCxTDm14Jls
 
