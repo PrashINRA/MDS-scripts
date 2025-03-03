@@ -30,6 +30,9 @@ fastq_id,fastqs,feature_types
 GEX,/net/beegfs/scratch/mafechkar/MDS_Data/MDS_GEX/,Gene Expression
 Protein,/net/beegfs/scratch/mafechkar/MDS_Data/MDS_PROT/,Antibody Capture
 
+[feature]
+reference,/net/beegfs/scratch/mafechkar/MDS_Data/metadata/feature_ref.csv
+
 [samples]
 sample_id,probe_barcode_ids
 MDS201,SITTA9|SITNA1
