@@ -4,11 +4,14 @@ antibody_file = "/net/beegfs/scratch/mafechkar/MDS_Data/metadata/Kopie van Total
 
 df = pd.read_excel(antibody_file, engine='openpyxl')
 
-# Create the feature reference DataFrame with required fields
+# Create the feature reference DataFrame with the required columns and order:
 feature_df = pd.DataFrame({
-    "gene_id": df["Ensemble ID"],  
-    "probe_id": df["DNA_ID"],       
-    "probe_seq": df["Barcode"]      
+    "id": df["DNA_ID"],                 
+    "name": df["Gene name"],              
+    "read": "AntibodyCapture",           
+    "pattern": "",                       
+    "sequence": df["Barcode"],           
+    "feature_type": "Antibody Capture"   
 })
 
 output_csv = "/net/beegfs/scratch/mafechkar/MDS_Data/metadata/feature_ref.csv"
