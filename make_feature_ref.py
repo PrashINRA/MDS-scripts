@@ -1,5 +1,3 @@
-nano make_feature_ref.py
-
 import pandas as pd
 
 antibody_file = "/net/beegfs/scratch/mafechkar/MDS_Data/metadata/Kopie van TotalSeq_C_Human_Universal_Cocktail_v1_137_Antibodies_399905_Barcodes.xlsx"
