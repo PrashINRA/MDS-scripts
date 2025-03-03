@@ -23,3 +23,9 @@ For assistance, upload this file to 10x Genomics by running:
 cellranger upload <your_email> "MDS_Output/MDS_Output.mri.tgz"
 
 Cell Ranger Multi finished at Mon Mar  3 11:18:12 CET 2025. Output is in: /net/beegfs/scratch/mafechkar/MDS_Data/MDS_Output
+DNA_ID	Description	Clone	Barcode	Ensemble ID	Gene name
+C0006	anti-human CD86	IT2.2	GTCTTTGTCAGTGCA	ENSG00000114013	CD86
+C0007	anti-human CD274 (B7-H1, PD-L1)	29E.2A3	GTTGTCCGACAATAC	ENSG00000120217	CD274
+C0020	anti-human CD270 (HVEM, TR2)	122	TGATAGAAACAGACC	ENSG00000157873	TNFRSF14
+C0023	anti-human CD155 (PVR)	SKII.4	ATCACATCGTTGCCA	ENSG00000073008	PVR
+C0024	anti-human CD112 (Nectin-2)	TX31	AACCTTCCGTCTAAG	ENSG00000130202	NECTIN2
