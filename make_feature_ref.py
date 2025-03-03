@@ -20,6 +20,7 @@ with open(output_csv, "w") as f:
     f.write("#panel_type=CITE-seq\n")
     f.write("#reference_genome=GRCh38\n")
     f.write("#reference_version=2020-A\n")
+    f.write("#probe_set_file_format=10x_v1\n")
     feature_df.to_csv(f, index=False)
 
 print(f"Feature reference CSV file has been created at {output_csv}")
