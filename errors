@@ -1,26 +1,25 @@
- cat cellranger_multi_counts.out
-Starting Cell Ranger Multi at Mon Mar  3 10:34:30 CET 2025...
+Starting Cell Ranger Multi at Mon Mar  3 10:57:46 CET 2025...
 
 
 Martian Runtime - v4.0.13
-2025-03-03 10:34:30 [jobmngr] WARNING: User-supplied amount 300 GB is higher than the detected cgroup memory limit of 40.0 GB
-Serving UI at http://node003.cluster:34305?auth=ZbU5kc2bSRDagFTsXTNIG-tAlZd0jLCVL8z-Wjdgw20
+2025-03-03 10:57:46 [jobmngr] WARNING: User-supplied amount 300 GB is higher than the detected cgroup memory limit of 40.0 GB
+Serving UI at http://node003.cluster:43973?auth=0xYVBrppI9Q-k_8d2QA2dOCkXGz32cRayYWCOK7nutM
 
 Running preflight checks (please wait)...
 
 [error] Pipestance failed. Error log at:
-MDS_Output/SC_MULTI_CS/MULTI_PREFLIGHT/fork0/chnk0-u28b5c577a6/_errors
+MDS_Output/SC_MULTI_CS/MULTI_PREFLIGHT/fork0/chnk0-u4f62c57d1a/_errors
 
 Log message:
-[samples] row 2 has invalid probe_barcode_ids 'SI-TT-A9|SI-TN-A1' at line: 13, col: 8: invalid character(s): '-', must contain only uppercase letters (A-Z), digits (0-9), and plus (+)
+failed to parse CSV: [feature] reference is missing but feature barcode libraries provided
 
 Waiting 6 seconds for UI to do final refresh.
 Pipestance failed. Use --noexit option to keep UI running after failure.
 
-2025-03-03 10:34:38 Shutting down.
+2025-03-03 10:57:52 Shutting down.
 Saving pipestance info to "MDS_Output/MDS_Output.mri.tgz"
 For assistance, upload this file to 10x Genomics by running:
 
 cellranger upload <your_email> "MDS_Output/MDS_Output.mri.tgz"
 
-Cell Ranger Multi finished at Mon Mar  3 10:34:45 CET 2025. Output is in: /net/beegfs/scratch/mafechkar/MDS_Data/MDS_Output
+Cell Ranger Multi finished at Mon Mar  3 10:58:01 CET 2025. Output is in: /net/beegfs/scratch/mafechkar/MDS_Data/MDS_Output
