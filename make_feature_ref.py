@@ -2,10 +2,9 @@ import pandas as pd
 
 antibody_file = "/net/beegfs/scratch/mafechkar/MDS_Data/metadata/Kopie van TotalSeq_C_Human_Universal_Cocktail_v1_137_Antibodies_399905_Barcodes.xlsx"
 
-# Read the Excel file
 df = pd.read_excel(antibody_file, engine='openpyxl')
 
-# Create the feature reference DataFrame
+# Creating the feature reference DataFrame
 feature_df = pd.DataFrame({
     "id": df["Barcode"],
     "name": df["Gene name"],
@@ -15,7 +14,7 @@ feature_df = pd.DataFrame({
 
 output_csv = "/net/beegfs/scratch/mafechkar/MDS_Data/metadata/feature_ref.csv"
 
-# Open the output file and write the metadata header lines, then append the DataFrame
+# Opening the output file and writing the metadata header lines, then append the DataFrame
 with open(output_csv, "w") as f:
     f.write("#panel_name=TotalSeq_C_Human_Universal\n")
     f.write("#panel_type=CITE-seq\n")
