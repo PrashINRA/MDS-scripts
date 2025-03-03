@@ -1,25 +1,25 @@
-Starting Cell Ranger Multi at Mon Mar  3 10:57:46 CET 2025...
+Starting Cell Ranger Multi at Mon Mar  3 11:17:47 CET 2025...
 
 
 Martian Runtime - v4.0.13
-2025-03-03 10:57:46 [jobmngr] WARNING: User-supplied amount 300 GB is higher than the detected cgroup memory limit of 40.0 GB
-Serving UI at http://node003.cluster:43973?auth=0xYVBrppI9Q-k_8d2QA2dOCkXGz32cRayYWCOK7nutM
+2025-03-03 11:17:47 [jobmngr] WARNING: User-supplied amount 300 GB is higher than the detected cgroup memory limit of 40.0 GB
+Serving UI at http://node002.cluster:46161?auth=5B48XBRUyuQ2fZB8SS9H4URqRHpt6YCn3bA4ErzWRZw
 
 Running preflight checks (please wait)...
 
 [error] Pipestance failed. Error log at:
-MDS_Output/SC_MULTI_CS/MULTI_PREFLIGHT/fork0/chnk0-u4f62c57d1a/_errors
+MDS_Output/SC_MULTI_CS/MULTI_PREFLIGHT/fork0/chnk0-uc85bc581cb/_errors
 
 Log message:
-failed to parse CSV: [feature] reference is missing but feature barcode libraries provided
+The following metadata fields are required in the probe set CSV header: "panel_name", "panel_type", "reference_genome", "reference_version", but were not found. Please include these fields in #field=value format at the top of the file.
 
 Waiting 6 seconds for UI to do final refresh.
 Pipestance failed. Use --noexit option to keep UI running after failure.
 
-2025-03-03 10:57:52 Shutting down.
+2025-03-03 11:18:11 Shutting down.
 Saving pipestance info to "MDS_Output/MDS_Output.mri.tgz"
 For assistance, upload this file to 10x Genomics by running:
 
 cellranger upload <your_email> "MDS_Output/MDS_Output.mri.tgz"
 
-Cell Ranger Multi finished at Mon Mar  3 10:58:01 CET 2025. Output is in: /net/beegfs/scratch/mafechkar/MDS_Data/MDS_Output
+Cell Ranger Multi finished at Mon Mar  3 11:18:12 CET 2025. Output is in: /net/beegfs/scratch/mafechkar/MDS_Data/MDS_Output
