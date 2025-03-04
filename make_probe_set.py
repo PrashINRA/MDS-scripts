@@ -15,7 +15,7 @@ with open(output_probe_csv, "w") as f:
     f.write("#panel_name=TotalSeq_C_Human_Universal\n")
     f.write("#panel_type=CITE-seq\n")
     f.write("#reference_genome=GRCh38\n")
-    f.write("#reference_version=1.0.0\n")
+    f.write("#reference_version=2020-A\n")
     f.write("#probe_set_file_format=10x_v1\n")
     probe_set_df.to_csv(f, index=False)
 
