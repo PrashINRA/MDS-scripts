@@ -5,8 +5,8 @@ df = pd.read_excel(antibody_file, engine='openpyxl')
 
 probe_set_df = pd.DataFrame({
     "gene_id": df["Ensemble ID"],
-    "probe_id": df["DNA_ID"],
-    "probe_seq": df["Barcode"]
+    "probe_seq": df["Barcode"],
+    "probe_id": df["DNA_ID"]
 })
 
 output_probe_csv = "/net/beegfs/scratch/mafechkar/MDS_Data/metadata/probe_set.csv"
