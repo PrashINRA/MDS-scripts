@@ -4,7 +4,7 @@ antibody_file = "/net/beegfs/scratch/mafechkar/MDS_Data/metadata/Kopie van Total
 
 df = pd.read_excel(antibody_file, engine='openpyxl')
 
-# Create the feature reference DataFrame with the required columns and order:
+# Creating the feature reference DataFrame with the required columns and order:
 feature_df = pd.DataFrame({
     "id": df["DNA_ID"],                 
     "name": df["Gene name"],              
