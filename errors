@@ -1,3 +1,40 @@
+ cat cellranger_multi_counts.out
+Starting Cell Ranger Multi at Wed Mar  5 12:44:55 CET 2025...
+
+
+Martian Runtime - v4.0.13
+2025-03-05 12:44:55 [jobmngr] WARNING: User-supplied amount 300 GB is higher than the detected cgroup memory limit of 40.0 GB
+Serving UI at http://node009.cluster:34821?auth=Eu0ZD8mzr9Iso3STZ7RCVln-O09JpMXMS9UhPGtrYXQ
+
+Running preflight checks (please wait)...
+
+[error] Pipestance failed. Error log at:
+MDS_Output/SC_MULTI_CS/MULTI_PREFLIGHT/fork0/chnk0-u3b93c83937/_errors
+
+Log message:
+Requested sample(s) not found in fastq directory "/net/beegfs/scratch/mafechkar/MDS_Data/MDS_GEX/"
+Available samples:
+MDS001-09-203
+MDS005-09-247
+MDS006-08-249
+MDS010-09-299
+MDS016-09-478
+MDS023-10-053
+MDS029-10-118
+MDS038-10-241
+MDS059-10-531
+MDS065-10-609
+MDS154-13-486
+MDS155-13-606
+MDS167-13-913
+MDS169-13-919
+MDS180-14-164
+MDS189-14-527
+MDS201-15-093
+MDS212-15-463
+
+
+////
 Martian Runtime - v4.0.13
 2025-03-05 12:33:13 [jobmngr] WARNING: User-supplied amount 300 GB is higher than the detected cgroup memory limit of 40.0 GB
 Serving UI at http://node008.cluster:42219?auth=9Rt3Q4ayatcoj470rxWll31wEEiBeji07bhk-zxtonw
