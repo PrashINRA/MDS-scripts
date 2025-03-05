@@ -1,4 +1,15 @@
 [error] Pipestance failed. Error log at:
+MDS_Output/SC_MULTI_CS/MULTI_PREFLIGHT/fork0/chnk0-ueadcc83402/_errors
+
+Log message:
+The feature definition file contains a read type value 'AntibodyCapture' which is not one of the allowed read types 'R1' or 'R2'.
+
+Waiting 6 seconds for UI to do final refresh.
+Pipestance failed. Use --noexit option to keep UI running after failure.
+
+//
+
+[error] Pipestance failed. Error log at:
 MDS_Output/SC_MULTI_CS/MULTI_PREFLIGHT/fork0/chnk0-uddfec82947/_errors
 
 Log message:
