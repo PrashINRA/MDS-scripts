@@ -31,18 +31,3 @@ python3 make_feature_ref.py
 
 
 
-head /net/beegfs/scratch/mafechkar/MDS_Data/metadata/feature_ref.csv
-#panel_name=TotalSeq_C_Human_Universal
-#panel_type=CITE-seq
-#reference_genome=GRCh38
-#reference_version=2020-A
-#probe_set_file_format=10x_v1
-id,name,read,pattern,sequence,feature_type
-C0006,CD86,AntibodyCapture,,GTCTTTGTCAGTGCA,Antibody Capture
-C0007,CD274,AntibodyCapture,,GTTGTCCGACAATAC,Antibody Capture
-C0020,TNFRSF14,AntibodyCapture,,TGATAGAAACAGACC,Antibody Capture
-C0023,PVR,AntibodyCapture,,ATCACATCGTTGCCA,Antibody Capture
-
-
-
-
