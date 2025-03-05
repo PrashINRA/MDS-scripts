@@ -23,7 +23,12 @@ with open(output_csv, "w") as f:
     f.write("#reference_genome=GRCh38\n")
     f.write("#reference_version=2020-A\n")
     f.write("#probe_set_file_format=10x_v1\n")
-    feature_df.to_csv(f, index=False)
+    f.write("id, name, read, pattern, sequence, feature_type\n")
+    # Write the data rows in the same format
+    for index, row in feature_df.iterrows():
+        # If pattern is empty, it will print as an empty string
+        line = f'{row["id"]}, {row["name"]}, {row["read"]}, {row["pattern"]}, {row["sequence"]}, {row["feature_type"]}\n'
+        f.write(line)
 
 print(f"Feature reference CSV file has been created at {output_csv}")
 
