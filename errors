@@ -1,3 +1,19 @@
+Martian Runtime - v4.0.13
+2025-03-05 12:33:13 [jobmngr] WARNING: User-supplied amount 300 GB is higher than the detected cgroup memory limit of 40.0 GB
+Serving UI at http://node008.cluster:42219?auth=9Rt3Q4ayatcoj470rxWll31wEEiBeji07bhk-zxtonw
+
+Running preflight checks (please wait)...
+
+[error] Pipestance failed. Error log at:
+MDS_Output/SC_MULTI_CS/MULTI_PREFLIGHT/fork0/chnk0-uee31c83679/_errors
+
+Log message:
+Invalid pattern: ''. The pattern must optionally start with '5P', optionally end with '3P', contain exactly one instance of the string '(BC)' and otherwise contain only the characters A, C, G, T, and N.
+
+Waiting 6 seconds for UI to do final refresh.
+Pipestance failed. Use --noexit option to keep UI running after failure.
+
+///
 [error] Pipestance failed. Error log at:
 MDS_Output/SC_MULTI_CS/MULTI_PREFLIGHT/fork0/chnk0-ueadcc83402/_errors
 
