@@ -1,3 +1,5 @@
+"/net/beegfs/scratch/mafechkar/MDS_Data/MDS_GEX/MDS001-09-203_S17_L001_R1_001.fastq.gz"
+
  cat cellranger_multi_counts.out
 Starting Cell Ranger Multi at Wed Mar  5 12:44:55 CET 2025...
 
