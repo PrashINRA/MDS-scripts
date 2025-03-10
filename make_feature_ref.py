@@ -30,7 +30,6 @@ with open(output_csv, "w") as f:
 
 print(f"Feature reference CSV file has been created at {output_csv}")
 
-python3 make_feature_ref.py
 
 
 
