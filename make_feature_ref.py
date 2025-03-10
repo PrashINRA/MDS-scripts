@@ -17,12 +17,7 @@ feature_df = pd.DataFrame({
 output_csv = "/net/beegfs/scratch/mafechkar/MDS_Data/metadata/feature_ref.csv"
 
 # Opening the output file and writing the metadata header lines, then append the DataFrame
-with open(output_csv, "w") as f:
-    f.write("#panel_name=TotalSeq_C_Human_Universal\n")
-    f.write("#panel_type=CITE-seq\n")
-    f.write("#reference_genome=GRCh38\n")
-    f.write("#reference_version=2020-A\n")
-    f.write("#probe_set_file_format=10x_v1\n")
+with open(output_csv, "w", newline="\n", encoding="utf-8-sig") as f:
     f.write("id, name, read, pattern, sequence, feature_type\n")
     for index, row in feature_df.iterrows():
         line = f'{row["id"]}, {row["name"]}, {row["read"]}, {row["pattern"]}, {row["sequence"]}, {row["feature_type"]}\n'
