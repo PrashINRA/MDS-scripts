@@ -3,20 +3,6 @@ cp /net/beegfs/scratch/mafechkar/MDS_Data/MDS_GEX/*_R1_*.fastq.gz /net/beegfs/sc
 cp /net/beegfs/scratch/mafechkar/MDS_Data/MDS_GEX/*_R2_*.fastq.gz /net/beegfs/scratch/mafechkar/MDS_Data/MDS_GEX_fastqs/
 
 
-Request for Presentation Slides for MDS Immune Profiling Proposal
-
-Dear Luca,
-
-Thank you for the excellent presentation yesterday—it was both clear and very informative. My name is Marwa, and I'm an intern with Rachel Thijssen’s group working on the data analysis for the 18 MDS samples provided by Coen, Marissa, and Mylene. I am investigating immune profiling in MDS patients to differentiate responders from non-responders. (I was sitting in the middle yesterday—curly hair and all!)
-
-I’m currently in the process of writing my research proposal for this project, and I found the slides and the papers you mentioned to be extremely helpful for developing the background and introduction sections. Would it be possible for you to share your presentation with me?
-
-Thank you very much for your assistance.
-
-Best regards,
-
-Marwa Afechkar
-
 "/net/beegfs/scratch/mafechkar/MDS_Data/MDS_GEX/MDS001-09-203_S17_L001_R1_001.fastq.gz"
 
  cat cellranger_multi_counts.out
