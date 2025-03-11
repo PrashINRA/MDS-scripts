@@ -1,4 +1,21 @@
+Split Data:
+Separate the raw sequencing data into Gene Expression (GEX) and Protein (CITE‑seq) FASTQ files.
 
+Generate Reference Files from the CITE‑seq Antibody Panel:
+
+Create a probe set CSV file (3‑column format with headers: gene_id, probe_id, probe_seq) from the provided antibody panel data.
+Create a feature reference CSV file (6‑column format with headers: id, name, read, pattern, sequence, feature_type) from the same CITE‑seq antibody panel.
+Create the Multi‑Configuration File:
+Prepare a multi‑config file that references:
+
+The transcriptome reference and FASTQ directories for gene expression,
+The probe set CSV file in the [gene-expression] section, and
+The feature reference CSV file in the [feature] section, along with the necessary [libraries] and [samples] sections.
+Write the SBATCH Script:
+Develop an sbatch script that loads the required module, sets up the environment, and executes the cellranger multi command using the multi‑config file.
+
+Observed Problem:
+Despite matching the sample IDs in the multi‑config file to those extracted from the FASTQ filenames, Cell Ranger Multi is failing to detect the requested samples in the specified FASTQ directory.
 
 Starting Cell Ranger Multi at Tue Mar 11 11:35:14 CET 2025...
 
