@@ -1,3 +1,34 @@
+Starting Cell Ranger Multi at Tue Mar 11 11:35:14 CET 2025...
+
+
+Martian Runtime - v4.0.13
+2025-03-11 11:35:14 [jobmngr] WARNING: User-supplied amount 300 GB is higher than the detected cgroup memory limit of 40.0 GB
+Serving UI at http://node009.cluster:38627?auth=kfmFi_remtCtFTO_p1dymudBqsr53KqhU2ZtiF-XS_U
+
+Running preflight checks (please wait)...
+
+[error] Pipestance failed. Error log at:
+MDS_Output/SC_MULTI_CS/MULTI_PREFLIGHT/fork0/chnk0-u798ad011e2/_errors
+
+Log message:
+On machine: node009.cluster, specified FASTQ folder does not exist: /net/beegfs/scratch/mafechkar/MDS_Data/MDS_GEX_fastqs/
+
+Waiting 6 seconds for UI to do final refresh.
+Pipestance failed. Use --noexit option to keep UI running after failure.
+
+2025-03-11 11:35:37 Shutting down.
+Saving pipestance info to "MDS_Output/MDS_Output.mri.tgz"
+For assistance, upload this file to 10x Genomics by running:
+
+cellranger upload <your_email> "MDS_Output/MDS_Output.mri.tgz"
+
+Cell Ranger Multi finished at Tue Mar 11 11:35:38 CET 2025. Output is in: /net/beegfs/scratch/mafechkar/MDS_Data/MDS_Output
+[mafechkar@ares mafechkar]$
+
+
+
+
+///
 cat cellranger_multi_counts.out
 Starting Cell Ranger Multi at Tue Mar 11 11:27:48 CET 2025...
 
