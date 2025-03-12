@@ -3,15 +3,13 @@ reference,/net/beegfs/scratch/mafechkar/MDS_Data/References/refdata-gex-GRCh38-2
 probe-set,/net/beegfs/scratch/mafechkar/MDS_Data/metadata/probe_set.csv
 create-bam,false
 
-[libraries]
-fastq_id,fastqs,lanes,feature_types
-GEX,/net/beegfs/scratch/mafechkar/MDS_Data/MDS_GEX/MDS_GEX_fastqs,1,Gene Expression
-GEX,/net/beegfs/scratch/mafechkar/MDS_Data/MDS_GEX/MDS_GEX_fastqs,2,Gene Expression
-GEX,/net/beegfs/scratch/mafechkar/MDS_Data/MDS_GEX/MDS_GEX_fastqs,3,Gene Expression
-Protein,/net/beegfs/scratch/mafechkar/MDS_Data/MDS_PROT,1,Antibody Capture
-
 [feature]
 reference,/net/beegfs/scratch/mafechkar/MDS_Data/metadata/feature_ref.csv
+
+[libraries]
+fastq_id,fastqs,lanes,feature_types
+GEX,/net/beegfs/scratch/mafechkar/MDS_Data/MDS_GEX/MDS_GEX_fastqs,1|2|3,Gene Expression
+Protein,/net/beegfs/scratch/mafechkar/MDS_Data/MDS_PROT,1,Antibody Capture
 
 [samples]
 sample_id,probe_barcode_ids
