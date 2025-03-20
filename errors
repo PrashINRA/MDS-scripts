@@ -1,3 +1,35 @@
+[error] Pipestance failed. Error log at:
+MDS_Output/SC_MULTI_CS/MULTI_PREFLIGHT/fork0/chnk0-ue3ccdc3aa7/_errors
+
+Log message:
+Requested sample(s) not found in fastq directory "/net/beegfs/scratch/mafechkar/MDS_Data/MDS_PROT"
+Available samples:
+MDS001-09-203-p
+MDS005-09-247-p
+MDS006-08-249-p
+MDS010-09-299-p
+MDS016-09-478-p
+MDS023-10-053-p
+MDS029-10-118-p
+MDS038-10-241-p
+MDS059-10-531-p
+MDS065-10-609-p
+MDS154-13-486-p
+MDS155-13-606-p
+MDS167-13-913-p
+MDS169-13-919-p
+MDS180-14-164-p
+MDS189-14-527-p
+MDS201-15-093-p
+MDS212-15-463-p
+
+Waiting 6 seconds for UI to do final refresh.
+Pipestance failed. Use --noexit option to keep UI running after failure.
+
+2025-03-20 16:56:48 Shutting down.
+Saving pipestance info to "MDS_Output/MDS_Output.mri.tgz"
+For assistance, upload this file to 10x Genomics by running:
+
 
 
 ///
