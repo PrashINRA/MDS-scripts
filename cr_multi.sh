@@ -3,13 +3,13 @@
 #SBATCH --output=cellranger_multi_counts.out   
 #SBATCH --error=cellranger_multi_counts.err    
 #SBATCH --time=165:00:00
-#SBATCH --cpus-per-task=16
-#SBATCH --mem=500G
+#SBATCH --cpus-per-task=10
+#SBATCH --mem=300G
 #SBATCH --partition=defq
 #SBATCH --mail-type=END,FAIL
 #SBATCH --mail-user=m.afechkar@amsterdamumc.nl
 
-module load cellranger
+module load cellranger ##put exact version
 
 # Defining base paths
 BASE_DIR="/net/beegfs/scratch/mafechkar/MDS_Data"
