@@ -81,7 +81,7 @@ MDS016-09-478,/net/beegfs/scratch/mafechkar/MDS_Data/MDS_GEX/MDS_GEX_fastqs,2,Ge
 MDS016-09-478,/net/beegfs/scratch/mafechkar/MDS_Data/MDS_GEX/MDS_GEX_fastqs,3,Gene Expression
 MDS016-09-478-p,/net/beegfs/scratch/mafechkar/MDS_Data/MDS_PROT,1,Antibody Capture
 
-[samples]
+[samples] ## I Still see this here?
 sample_id,probe_barcode_ids
 MDS201-15-093,SITTA9|SITNA1
 MDS212-15-463,SITTA10|SITNA2
